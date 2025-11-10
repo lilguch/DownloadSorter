@@ -515,7 +515,7 @@ namespace DownloadsSorter
 
         private void HelpButton_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/lilguch/DownloadsSorter/tree/master");
+            System.Diagnostics.Process.Start("https://github.com/lilguch/DownloadSorter/blob/main/README.md");
         }
     }
 }
