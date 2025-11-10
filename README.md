@@ -6,11 +6,11 @@
 <h3 align="center">Автоматическая сортировка файлов в папке "Загрузки"</h3>
 
 <p align="center">
-  <a href="https://github.com/lilguch/DownloadsSorter/releases">
-    <img src="https://img.shields.io/github/v/release/lilguch/DownloadsSorter?label=v1.0.1&color=blue" alt="Release Version">
+  <a href="https://github.com/lilguch/DownloadSorter/releases">
+    <img src="https://img.shields.io/github/v/release/lilguch/DownloadSorter?label=v1.0.1&color=blue" alt="Release Version">
   </a>
-  <a href="https://github.com/lilguch/DownloadsSorter/stargazers">
-    <img src="https://img.shields.io/github/stars/lilguch/DownloadsSorter?style=social" alt="GitHub stars">
+  <a href="https://github.com/lilguch/DownloadSorter/stargazers">
+    <img src="https://img.shields.io/github/stars/lilguch/DownloadSorter?style=social" alt="GitHub stars">
   </a>
 </p>
 
