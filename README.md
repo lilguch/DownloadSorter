@@ -2,7 +2,7 @@
   <img src="screenshots/app.png" alt="DownloadsSorter logo" width="50"/>
 </p>
 
-<h1 align="center">📂 DownloadsSorter</h1>
+<h1 align="center">📂 DownloadSorter</h1>
 <h3 align="center">Автоматическая сортировка файлов в папке "Загрузки"</h3>
 
 <p align="center">
