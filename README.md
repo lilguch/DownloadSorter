@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/main_ui.png" alt="DownloadsSorter screenshot" width="700"/>
+  <img src="screenshots/app.png" alt="DownloadsSorter logo" width="700"/>
 </p>
 
 <h1 align="center">📂 DownloadsSorter</h1>
