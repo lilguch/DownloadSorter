@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/lilguch/DownloadSorter/releases">
-    <img src="https://img.shields.io/github/v/release/lilguch/DownloadSorter?label=v1.0.1&color=blue" alt="Release Version">
+    <img src="https://img.shields.io/github/v/release/lilguch/DownloadSorter?label=v1.0.2&color=blue" alt="Release Version">
   </a>
   <a href="https://github.com/lilguch/DownloadSorter/stargazers">
     <img src="https://img.shields.io/github/stars/lilguch/DownloadSorter?style=social" alt="GitHub stars">
