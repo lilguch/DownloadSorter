@@ -49,10 +49,10 @@
 
 Если программа оказалась полезной — поддержите разработку:
 
-**💵 Карта**	[https://pay.cloudtips.ru/p/399428b8](https://pay.cloudtips.ru/p/399428b8)
-**🅱️ BTC** bc1qxlw3hy0n86d8wwyvsxgkfr744scdpl23w7evhn
-**💰 USDT Tron** TRdg4x46DWnLEZ7S81znTYpcdJSxCyMMLU
-**💰 USDT Ethereum** 0xbF47cbbf41B198c0F98c4d196D6170cA9Ae2Fc2a
+**💵 Карта**	[https://pay.cloudtips.ru/p/399428b8](https://pay.cloudtips.ru/p/399428b8)  
+**🅱️ BTC** bc1qxlw3hy0n86d8wwyvsxgkfr744scdpl23w7evhn  
+**💰 USDT Tron** TRdg4x46DWnLEZ7S81znTYpcdJSxCyMMLU  
+**💰 USDT Ethereum** 0xbF47cbbf41B198c0F98c4d196D6170cA9Ae2Fc2a  
 
 Каждая поддержка помогает развивать проект и добавлять новые функции ❤️
 --
