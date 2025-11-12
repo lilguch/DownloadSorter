@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
@@ -419,9 +419,7 @@ namespace DownloadsSorter
 
         public void SortExistingFiles()
         {
-            string downloadsPath = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
-                "Downloads");
+            string downloadsPath = PathToSort;
 
             try
             {
