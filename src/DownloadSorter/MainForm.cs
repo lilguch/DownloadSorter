@@ -267,12 +267,25 @@ namespace DownloadsSorter
                     var json = File.ReadAllText("rules.json");
                     var config = JsonSerializer.Deserialize<SorterConfig>(json);
                     _rules = config.Rules;
+                    if (File.Exists("sortfolder.txt"))
+                    {
+                        DownloadOrganizer.PathToSort = File.ReadAllText("sortfolder.txt").Trim();
+                        Folder_textBox.Text = DownloadOrganizer.PathToSort;
+                    }
+                    else
+                    {
+                        DownloadOrganizer.PathToSort = Path.Combine(
+                   Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                   "Downloads"); ;
+                        Folder_textBox.Text = DownloadOrganizer.PathToSort;
+                    }
                 }
                 else
                 {
                     _rules = new List<SorterRule>();
                     _organizer.GenerateStandartFile();
                     LoadRules();
+                    Folder_textBox.Text = DownloadOrganizer.PathToSort;
                 }
             }
             catch
@@ -511,11 +524,28 @@ namespace DownloadsSorter
             var options = new JsonSerializerOptions { WriteIndented = true };
             var json = JsonSerializer.Serialize(config, options);
             File.WriteAllText("rules.json", json);
+            File.WriteAllText("sortfolder.txt",Folder_textBox.Text);
         }
 
         private void HelpButton_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/lilguch/DownloadSorter/blob/main/README.md");
+        }
+
+        private void SelectFolder_button_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderDialog = new FolderBrowserDialog())
+            {
+                folderDialog.Description = "Выберите папку для сортировки";
+                folderDialog.RootFolder = Environment.SpecialFolder.Desktop;
+                folderDialog.ShowNewFolderButton = true;
+                folderDialog.SelectedPath = DownloadOrganizer.PathToSort;
+                if (folderDialog.ShowDialog() == DialogResult.OK)
+                {
+                    DownloadOrganizer.PathToSort = folderDialog.SelectedPath;
+                    Folder_textBox.Text = folderDialog.SelectedPath;
+                }
+            }
         }
     }
 }

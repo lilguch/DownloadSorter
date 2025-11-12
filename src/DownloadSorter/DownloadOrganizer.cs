@@ -13,6 +13,7 @@ namespace DownloadsSorter
 {
     public class DownloadOrganizer
     {
+        public static string PathToSort;
         private FileSystemWatcher _fileWatcher;
         private NotifyIcon _notifyIcon;
         public bool IsWatching { get; private set; }
@@ -26,8 +27,20 @@ namespace DownloadsSorter
         public void StartWatching()
         {
             string downloadsPath = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
-                "Downloads");
+                   Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                   "Downloads"); 
+            if(PathToSort!=null)
+            {
+                if(Directory.Exists(PathToSort))
+                {
+                    downloadsPath = PathToSort;
+                }
+                else
+                {
+
+                    ShowNotification("Ошибка доступа", "Папки из конфига не существует\r\nПроверьте папку и измените настройки", true);
+                }
+            }
 
             _fileWatcher = new FileSystemWatcher
             {
@@ -163,6 +176,10 @@ namespace DownloadsSorter
 
         public void GenerateStandartFile()
         {
+            PathToSort = Path.Combine(
+                   Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),
+                   "Downloads");
+            File.WriteAllText("sortfolder.txt", PathToSort);
             var defaultConfig = new SorterConfig
             {
                 Rules = new List<SorterRule>
