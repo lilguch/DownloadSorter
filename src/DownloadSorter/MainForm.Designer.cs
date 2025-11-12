@@ -63,9 +63,9 @@ namespace DownloadsSorter
             this.SortOldFiles_checkBox.Location = new System.Drawing.Point(38, 331);
             this.SortOldFiles_checkBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SortOldFiles_checkBox.Name = "SortOldFiles_checkBox";
-            this.SortOldFiles_checkBox.Size = new System.Drawing.Size(322, 24);
+            this.SortOldFiles_checkBox.Size = new System.Drawing.Size(294, 24);
             this.SortOldFiles_checkBox.TabIndex = 7;
-            this.SortOldFiles_checkBox.Text = "Отсортировать старые файлы в загрузках";
+            this.SortOldFiles_checkBox.Text = "Отсортировать старые файлы в папке";
             this.SortOldFiles_checkBox.UseVisualStyleBackColor = true;
             // 
             // label1
