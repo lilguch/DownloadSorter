@@ -33,7 +33,7 @@
 
 ## 🖼 Скриншоты
 
-![Main UI](screenshots/main_ui.png)
+![Main UI](screenshots/main.png)
 ---
 
 ## 🧰 Установка
